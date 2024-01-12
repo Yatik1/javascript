@@ -18,7 +18,7 @@ console.log(standards.toLocaleString()); // --> 10,000,000 : mentions ',' for sp
 console.log(standards.toLocaleString('en-IN')); // --> 1,00,00,000 : set to IN standard
 
 
-/* --------------------- Maths +++++++++++++++++++++++++++++++ */
+/* ------------------------ Maths +++++++++++++++++++++++++++++++ */
 
 console.log(Math); //object 
 console.log(Math.abs(-4)); //--> 4 : only convert -ve value to +ve value

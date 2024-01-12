@@ -22,14 +22,14 @@ console.log(newString.indexOf('k')); // --> 4
 const newSubStr=newString.substring(0,5)
 console.log(newSubStr); // --> yatik , returns a sub-string from original string from i to n-1 : eg:- (0-3)
 
-// const anotherString = newString.slice(5)
-// console.log(anotherString); // --> -srivastava 
+const anotherString1 = newString.slice(5)
+console.log(anotherString1); // --> -srivastava 
 
-// const anotherString = newString.slice(5,8)    //from i to n-1
-// console.log(anotherString);  // --> -sr 
+const anotherString2 = newString.slice(5,8)    //from i to n-1
+console.log(anotherString2);  // --> -sr 
 
-// const anotherString = newString.slice(-9) // on reverse starts with -1
-// console.log(anotherString)  // --> rivastava
+const anotherString3 = newString.slice(-9) // on reverse starts with -1
+console.log(anotherString3)  // --> rivastava
 
 const anotherString = newString.slice(-5,-1) // from i to n-1
 console.log(anotherString);  // --> stav

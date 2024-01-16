@@ -1,23 +1,23 @@
-// let v='yatik'
-// console.log(typeof v) //string  
+ let v='yatik'
+ console.log(typeof v) // string  
 
-// let vNumber = Number(v)
-// console.log(typeof vNumber)  // number
-// console.log(vNumber);       //Nan 
+ let vNumber = Number(v)
+ console.log(typeof vNumber)  // number
+ console.log(vNumber);       // Nan 
 
 
 let v=31
 let vNumber = String(v) 
 console.log(typeof vNumber)  // string
-console.log(vNumber);       //string  
+console.log(vNumber);       // string  
 
 
 let name='yatik'
 console.log(typeof name);
 
 const boolValue = Boolean(name)
-console.log(typeof boolValue) //boolean
-console.log(boolValue);  //true
+console.log(typeof boolValue) // boolean
+console.log(boolValue);  // true
 
 const numBool = Number(boolValue)
 console.log(typeof numBool); // number
@@ -33,9 +33,9 @@ let b = a++;
 console.log(b);  //10
 console.log(a);  //11
 
-// let c=b++;
-// console.log(c); //10
-// console.log(b); //11 
+ let c=b++;
+ console.log(c); //10
+ console.log(b); //11 
 
 let c=++b;
 console.log(c); //11

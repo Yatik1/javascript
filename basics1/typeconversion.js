@@ -33,9 +33,9 @@ let b = a++;
 console.log(b);  //10
 console.log(a);  //11
 
- let c=b++;
- console.log(c); //10
- console.log(b); //11 
+let c=b++;
+console.log(c); //10
+console.log(b); //11 
 
 let c=++b;
 console.log(c); //11

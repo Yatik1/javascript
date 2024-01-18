@@ -11,7 +11,6 @@ let foo;  //undefined
           //symbol 
           /* these above 7 data types are primitive data types and are immutable */
 
+  /* theres an another data type called object => {} */
 console.table([typeof age , typeof name , typeof isOpen , typeof foo])
 console.log(typeof null)  // => object
-  
-  /* theres an another data type called object => {} */

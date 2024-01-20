@@ -4,7 +4,7 @@
 
 const mySym = Symbol("key")   // --> symbol
 
-const User = {
+const User = {                // this is a non-singleton object
     name: "Yatik",
     "fullname": "Yatik Srivastava",
     [mySym]:"key1" , // --> this is syntax to define symbol key in an object

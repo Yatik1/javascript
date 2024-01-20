@@ -76,3 +76,33 @@ const Users = [
 
 console.log(Users[1]); // --> { id: 2, email: 'w@gmail.com' }
 console.log(Users[1].email); // --> w@gmail.com
+
+
+const student = {
+    rollno:2,
+    fullName : "Yatik Srivastava",
+    marks: 90
+}
+
+console.log(student); // --> { rollno: 2, fullName: 'Yatik Srivastava', marks: 90 }
+console.log(student.fullName);  // --> Yatik Srivastava
+
+// const {fullName} = student   // This approach is called distructor  
+// console.log(fullName); // --> Yatik Srivastava
+
+// const {marks} = student
+// console.log(marks); // --> 90
+
+const {fullName , marks} = student
+console.log(fullName,marks); // --> Yatik Srivastava 90
+
+const {fullName : name} = student
+console.log(name); // --> Yatik Srivastava
+
+/* ++++++++++ JSON Format ---------- */
+
+// {
+//     "firstName": "yatik",
+//     "surName": "srivastava",
+//     "city": "Delhi"
+// }

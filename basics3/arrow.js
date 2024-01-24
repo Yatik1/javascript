@@ -19,12 +19,15 @@ user.welcomeMessage()  /* yatik , welcome to website
  */
 
 user.username = "Mayank"
-user.welcomeMessage()  /* Mayank , welcome to website
+user.welcomeMessage() 
+/*
+ Mayank , welcome to website
 {
   username: 'Mayank',
   age: 21,
   welcomeMessage: [Function: welcomeMessage]
-} */
+} 
+*/
 
 console.log(this);  // --> {}
 

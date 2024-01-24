@@ -46,7 +46,7 @@ const name2 = function() {
 
 name2()
 
-// ---------- arrow function ------------
+// ------------ arrow function -------------
 
 const name3 = () => {
     // let username = "yatik"

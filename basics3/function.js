@@ -1,5 +1,5 @@
 function myName() {
-    console.log("Yatik");
+    console.log("Yatik")
 }
  
 myName()   // --> Yatik
@@ -11,7 +11,7 @@ function add(n1,n2) {
 add(2,3) // --> 5
 
 const result = add(4,3)
-console.log(result);  // --> undefined :  as add() doesn't returning anything ! 
+console.log(result) // --> undefined :  as add() doesn't returning anything ! 
 
 function add(n1,n2) {
     return n1+n2

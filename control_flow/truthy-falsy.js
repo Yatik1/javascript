@@ -6,6 +6,11 @@ if (userEmail) {
     console.log("Don't have user email");
 }
 
+/* what are truthy and falsy value : In js , each value has an inherent Boolean value , generally known as either truthy or falsy
+    Some of the rules that determine how non-Boolean values are translated into true or false values are a little bizarre.
+    Understanding the concepts and their effect on comparison helps when debugging JavaScript applications.
+*/
+
 // falsy values
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
@@ -33,7 +38,7 @@ val1 = null ?? 10 ?? 20
 
 
 
-console.log(val1);
+console.log(val1);  // --> 10
 
 // Terniary Operator
 

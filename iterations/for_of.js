@@ -73,5 +73,5 @@ const myObject = {
 }
 
 for (const [key,val] of myObject) {
-    console.log(key , ":" , val); // --> Error , object can't iterable like this , there is another approach 
+    console.log(key , ":" , val); // --> Error , object can't iterable like this , there is another approach like for_in loop
 }

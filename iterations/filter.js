@@ -11,6 +11,8 @@ console.log(values);  // -->> undefined , we can use another approach
 
 /* ------------ filter --------------------------- */
 
+// filter returns the value , thus we have to use new variable to use that output
+
 const numbers = [1,2,3,4,5,6,7,8,9]
 
 const newNums = numbers.filter((num) => {

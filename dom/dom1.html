@@ -3,16 +3,103 @@
 <head>
     <meta charset="UTF-8">
     
+    <title>DOM learning</title>
     <style>
-        .black{
+        .bg-black{
             background-color: #212121;
-            color: white;
+            color: #fff;
         }
     </style>
 </head>
-<body class="black">
-    <h1>DOM Manipulation</h1>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
 
-    <script src="dom.js"></script>
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
 </body>
 </html>
+
+<!--
+  
+  document.getElementById('title')
+   :-- <h1 id=​"title" class=​"heading">​DOM Manipulation​</h1>​
+  document.getElementById('title').getAttribute('id')
+    :-- 'title'
+  document.getElementById('title').getAttribute('class')
+    :-- 'heading'
+  document.getElementById('title').setAttribute("class" , 'dom-practice heading')
+  document.getElementById("title")
+    :--  <h1 id=​"title" class=​"dom-practice heading" style=​"background-color:​ green;​ padding:​ 15px;​ border-radius:​ 15px;​">​DOM Manipulation​</h1>​ 
+  const title = document.getElementById('title')
+    :-- undefined
+  title
+     :--  <h1 id=​"title" class=​"dom-practice heading" style=​"background-color:​ green;​ padding:​ 15px;​ border-radius:​ 15px;​">​DOM Manipulation​</h1>​ 
+
+   title.style.backgroundColor = "green"
+    :-- 'green'
+title.style.padding = "15px"
+    :--  '15px'
+title.style.borderRadius = "15px"
+    :--  '15px
+
+title.innerText
+  :: 'DOM learning'
+title.textContent
+ :: 'DOM learning test text'
+title.innerHTML
+  :: 'DOM learning <span style="display: none;">test text</span>'
+
+document.getElementsByClassName("heading")
+  :: HTMLCollection [h1#title.heading, title: h1#title.heading]
+
+document.querySelector('h2')
+  :: <h2>​Lorem ipsum dolor sit.​</h2>​
+document.querySelectorAll('h2')
+ :: NodeList(3) [h2, h2, h2]0: h21: h22: h2length: 3[[Prototype]]: NodeList
+document.querySelector('#title')
+  :: <h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+  :: <h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('input[type="password"]')
+  :: <input type=​"password" name id>​
+document.querySelector('input')
+   :: <input type=​"password" name id>​
+
+
+const myul = document.querySelector("ul")
+  :: undefined
+myul
+  :: <ul>​…​</ul>​
+const greenL = myul.querySelector("li")
+ :: undefined
+greenL
+  :: <li class=​"list-item">​…​</li>​::marker​"one"</li>​
+greenL.style.backgroundColor = "blue"
+  :: 'blue'
+greenL.style.padding = "15px"
+  :: '15px'
+greenL.innerText = "updated list"
+':: updated list'
+
+greenList
+   :: NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+greenList.style.backgroundColor = "blue"
+  :: Error , we can't manipulate this since this is nodeList ,thus we have to use another approach that is : 
+
+greenList.forEach((li) => {
+    li.style.backgroundColor = "blue"
+})  
+ :: "blue"
+
+-->

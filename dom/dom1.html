@@ -30,7 +30,7 @@
 </body>
 </html>
 
-<!--
+<!--  DOM Manupulation
   
   document.getElementById('title')
    :-- <h1 id=​"title" class=​"heading">​DOM Manipulation​</h1>​
@@ -102,4 +102,26 @@ greenList.forEach((li) => {
 })  
  :: "blue"
 
+
+document.getElementsByClassName("list-item")
+  :: HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+const classlist = document.getElementsByClassName("list-item")
+classlist
+    :: HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+classlist.forEach((li) => {
+    console.log(li)
+})
+  :: Error
+
+const convertedArr = Array.from(classlist)
+   :: undefined
+convertedArr
+   :: (4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+convertedArr.forEach((li) => {
+    li.style.color = "orange"
+})
+   :: "orange"
 -->

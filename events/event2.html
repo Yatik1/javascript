@@ -1,0 +1,35 @@
+ 
+<!-- setTimeout  clearTimeout -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+
+     const sayName = function() {
+        console.log("Yatik");
+     }
+
+     const changeText = function(){
+        document.querySelector('h1').innerHTML= "Events and DOM"
+     }
+
+     const timeSet = setTimeout(changeText,4000)
+
+     document.getElementById("stop").addEventListener("click" , function(e) {
+        clearTimeout(timeSet)
+        console.log("timeout stopped !! ");
+     })
+
+    </script>
+</body>
+</html>
